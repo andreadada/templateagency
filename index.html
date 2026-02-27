@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Template Agenzia Immobiliare - Moderno & Minimale</title>
-    
+
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
 
@@ -20,7 +20,7 @@
             scroll-behavior: smooth;
             scroll-padding-top: 80px; /* Fix: previene la sovrapposizione della navbar sulle sezioni */
         }
-        
+
         body {
             font-family: 'Lato', sans-serif;
             background-color: #FAFAFA; /* Lightest gray/white */
@@ -41,7 +41,7 @@
             height: 300px;
             max-height: 400px;
         }
-        
+
         @media (min-width: 768px) {
             .chart-container {
                 height: 400px;
@@ -77,7 +77,7 @@
             from { opacity: 0; }
             to { opacity: 1; }
         }
-        
+
         /* Placeholder styling to emphasize template nature */
         .img-placeholder {
             background-color: #E7E5E4; /* Stone 200 */
@@ -90,19 +90,19 @@
         }
     </style>
 
-    <!-- 
+    <!--
     Placeholder Comments Required:
     -->
     <!-- Chosen Palette: Stone & Sharp Contrast. Background: #FAFAFA (Off-White), Text: #1C1917 (Stone Black), Accents: #D6D3D1 (Light Gray). No rounded corners. -->
-    
-    <!-- Application Structure Plan: 
+
+    <!-- Application Structure Plan:
          Single Page Application divided into logical vertical sections.
          1. Header/Nav: Sticky, minimal.
          2. Hero Section: High impact, minimal text, call to action.
          3. Portfolio/Presentation (Carousel): Interactive JS slider to view property "placeholders".
          4. Servizi Esclusivi: A clean, minimal grid highlighting the agency's expertise (replaces the analytical chart for a more elegant feel).
          5. Contact Section: Functional form and contact details.
-         Why: Vertical scroll is intuitive. Splitting JS/CSS/HTML conceptually within one file allows easy editing. Sharp edges convey "Modern/Luxury". 
+         Why: Vertical scroll is intuitive. Splitting JS/CSS/HTML conceptually within one file allows easy editing. Sharp edges convey "Modern/Luxury".
     -->
 
     <!-- Visualization & Content Choices:
@@ -111,7 +111,7 @@
          3. Contact Form (HTML/JS): Interactive validation.
          Confirms NO SVG graphics used. NO Mermaid JS used.
     -->
-    
+
     <!-- CONFIRMATION: NO SVG graphics used. NO Mermaid JS used. -->
 
 </head>
@@ -144,7 +144,7 @@
     <!-- SECTION 1: HOME (HERO) -->
     <section id="home" class="h-screen flex items-center justify-center pt-16">
         <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-            
+
             <!-- Left: Text -->
             <div class="space-y-6 text-center md:text-left z-10">
                 <p class="text-stone-500 uppercase tracking-[0.2em] text-sm">Esclusività & Design</p>
@@ -153,7 +153,7 @@
                     <span class="font-bold">L'Eccellenza.</span>
                 </h1>
                 <p class="text-stone-600 text-lg font-light max-w-md mx-auto md:mx-0">
-                    [Qui inserire il testo introduttivo dell'agenzia. Un breve paragrafo che descrive la filosofia "minimal" e la cura per i dettagli.]
+                    [Bbreve paragrafo che descrive la filosofia dell'agenzia]
                 </p>
                 <div class="pt-4">
                     <a href="#presentazione" class="sharp-btn inline-block border border-stone-900 text-stone-900 px-8 py-3 uppercase tracking-widest text-xs font-bold bg-transparent">
@@ -166,7 +166,7 @@
             <div class="h-96 md:h-[600px] w-full img-placeholder relative">
                 <div class="text-center p-4">
                     <span class="text-4xl block mb-2">⌂</span>
-                    [Qui si inserirà foto hero principale ad alta risoluzione]
+                    [Foto in primo piano]
                 </div>
                 <!-- Decorative sharp box -->
                 <div class="absolute -bottom-6 -left-6 w-24 h-24 border border-stone-900 hidden md:block z-[-1]"></div>
@@ -177,7 +177,7 @@
     <!-- SECTION 2: PRESENTAZIONE (CAROUSEL) -->
     <section id="presentazione" class="py-24 bg-stone-50">
         <div class="max-w-6xl mx-auto px-6">
-            
+
             <!-- Intro Text -->
             <div class="mb-16 text-center">
                 <h2 class="text-4xl mb-4">La Nostra Collezione</h2>
@@ -188,7 +188,7 @@
 
             <!-- Carousel Wrapper -->
             <div class="relative w-full max-w-5xl mx-auto">
-                
+
                 <!-- Slide Container (JS rendered) -->
                 <div id="carousel-content" class="grid grid-cols-1 md:grid-cols-2 gap-0 border border-stone-200 bg-white">
                     <!-- Content injected by JS -->
@@ -268,7 +268,7 @@
     <!-- SECTION 4: CONTATTI -->
     <section id="contatti" class="py-24 bg-stone-900 text-white">
         <div class="max-w-6xl mx-auto px-6">
-            
+
             <div class="grid grid-cols-1 md:grid-cols-2 gap-16">
                 <!-- Contact Info -->
                 <div class="space-y-8">
@@ -276,7 +276,7 @@
                     <p class="text-stone-400 font-light">
                         Siamo a disposizione per una consulenza privata. Compila il modulo o vieni a trovarci nella nostra sede principale.
                     </p>
-                    
+
                     <div class="space-y-4 pt-4">
                         <div class="flex items-center gap-4">
                             <span class="text-stone-500">📍</span>
@@ -305,7 +305,7 @@
                             <input type="text" class="w-full bg-stone-800 border-none p-4 text-white focus:ring-1 focus:ring-white sharp-btn" placeholder="Inserisci cognome">
                         </div>
                     </div>
-                    
+
                     <div>
                         <label class="block text-xs uppercase tracking-widest text-stone-500 mb-2">Email</label>
                         <input type="email" class="w-full bg-stone-800 border-none p-4 text-white focus:ring-1 focus:ring-white sharp-btn" placeholder="tua@email.com">
@@ -321,7 +321,7 @@
                     </button>
                 </form>
             </div>
-            
+
             <div class="mt-20 pt-8 border-t border-stone-800 text-center text-stone-600 text-xs uppercase tracking-widest">
                 © 2024 Nome Agenzia Immobiliare Template. Tutti i diritti riservati.
             </div>
@@ -374,7 +374,7 @@
         // Render Slide
         function renderSlide(index) {
             const prop = properties[index];
-            
+
             // Fade out effect simulation by rewriting HTML
             carouselContent.classList.remove('fade-anim');
             void carouselContent.offsetWidth; // Trigger reflow
@@ -392,13 +392,13 @@
                     <div class="uppercase tracking-widest text-xs text-stone-400 mb-2">Proprietà Esclusiva</div>
                     <h3 class="text-3xl md:text-4xl mb-2 font-serif">${prop.title}</h3>
                     <p class="text-stone-500 mb-6 italic">${prop.location}</p>
-                    
+
                     <div class="h-px w-12 bg-stone-300 mb-6"></div>
-                    
+
                     <p class="text-stone-600 mb-6 font-light leading-relaxed">
                         ${prop.description}
                     </p>
-                    
+
                     <div class="grid grid-cols-2 gap-4 mb-8 text-sm text-stone-800 font-bold border-t border-b border-stone-100 py-4">
                         <span>${prop.specs}</span>
                         <span class="text-right">${prop.price}</span>
@@ -442,10 +442,10 @@
             e.preventDefault();
             const btn = this.querySelector('button[type="submit"]');
             const originalText = btn.innerText;
-            
+
             btn.innerText = "Messaggio Inviato";
             btn.classList.add('bg-stone-700', 'text-white');
-            
+
             setTimeout(() => {
                 btn.innerText = originalText;
                 btn.classList.remove('bg-stone-700');
